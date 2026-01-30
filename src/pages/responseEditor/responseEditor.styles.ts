@@ -1,7 +1,9 @@
+import type { CSSProperties } from 'react';
 const LINE_HEIGHT = 32;
 const BASELINE_OFFSET = Math.round(LINE_HEIGHT * 0.6);
 
-export const styles = {
+export const styles: Record<string, CSSProperties> = {
+
   /* Page */
   page: {
     height: '100vh',

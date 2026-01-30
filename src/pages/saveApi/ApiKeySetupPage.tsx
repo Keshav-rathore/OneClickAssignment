@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { styles } from './ApiKeySetupPage.styles';
-import { useNavigate } from 'react-router-dom';
 import {
   getApiKeySafe,
   saveApiKey,
@@ -13,7 +12,6 @@ export default function ApiKeySetupPage() {
   const [message, setMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate();
 
   // Optional: preload existing key
   useEffect(() => {

@@ -35,6 +35,10 @@ export async function generateAssignment(
     contents: prompt,
   });
 
+    if (!result.text) {
+    throw new Error('Gemini returned empty response');
+  }
+
   return result.text;
 }
 

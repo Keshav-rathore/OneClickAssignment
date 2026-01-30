@@ -13,6 +13,8 @@ import {
 export default function ResponseEditor() {
   const location = useLocation();
   const notebookRef = useRef<HTMLDivElement | null>(null);
+  const navigate = useNavigate();
+
 
   const [content, setContent] = useState('');
   const [font, setFont] = useState<HandwritingFontKey>('caveat');
@@ -87,7 +89,6 @@ const downloadPDF = () => {
 };
 
 
-  const navigate = useNavigate();
 
 
   return (
